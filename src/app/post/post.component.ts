@@ -11,10 +11,11 @@ export class PostComponent implements OnInit {
 
   @Input() postDescription: string;
 
-  loveIts;
+  @Input() loveIts: number;
+
+  @Input() postDate: Date;
 
   constructor() {
-  	this.loveIts = 0;
   }
 
   ngOnInit() {
